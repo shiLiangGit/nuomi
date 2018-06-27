@@ -33,6 +33,10 @@ class Category extends Controller
             'cateList' => $cateList
         ]);
     }
+
+    /**
+     * 添加保存生活服务分类
+     */
     public function save(){
         $data = input("post.");
         $validate = validate("Category");
